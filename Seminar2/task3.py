@@ -3,6 +3,6 @@
 # - Для n=4 {1: 2, 2: 2.25, 3: 2.37, 4: 2.44}
 #         Сумма 9.06
 
-number = int(input('Введите число'))
-lst = [round((1+1/i)**i, 2) for i in range(1, number+1)]
-print(f'Последовательность: {lst}\nСумма: {round(sum(lst), 2)}')
+number = int(input('Введите число '))
+dict_num = {round((1+1/i)**i, 2) for i in range(1, number+1)}
+print(f'Последовательность: {dict_num}\nСумма: {round(sum(dict_num), 2)}')
